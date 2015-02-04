@@ -1,0 +1,9 @@
+{
+    "name": "cokpi",
+    "version": "0.0.1dev",
+    "main": "index",
+    "dependencies": {
+        "cokmvc": "latest",
+        "wiring-pi": "latest"
+    }
+}

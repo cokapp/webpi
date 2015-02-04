@@ -1,0 +1,419 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   'C:\\Users\\heichl\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 warn package.json cokpi@0.0.1 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ 'D:\\JS\\pi\\webpi', [ 'cokmvc', 'wiring-pi' ] ]
+7 info preinstall cokpi@0.0.1
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'cokmvc@latest', null ]
+10 verbose cache add name=undefined spec="cokmvc@latest" args=["cokmvc@latest",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'cokmvc@latest',
+11 verbose parsed url   path: 'cokmvc@latest',
+11 verbose parsed url   href: 'cokmvc@latest' }
+12 verbose cache add [ 'wiring-pi@latest', null ]
+13 verbose cache add name=undefined spec="wiring-pi@latest" args=["wiring-pi@latest",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'wiring-pi@latest',
+14 verbose parsed url   path: 'wiring-pi@latest',
+14 verbose parsed url   href: 'wiring-pi@latest' }
+15 verbose cache add name="cokmvc" spec="latest" args=["cokmvc","latest"]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'latest',
+16 verbose parsed url   path: 'latest',
+16 verbose parsed url   href: 'latest' }
+17 verbose addNamed [ 'cokmvc', 'latest' ]
+18 verbose addNamed [ null, null ]
+19 verbose cache add name="wiring-pi" spec="latest" args=["wiring-pi","latest"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'latest',
+20 verbose parsed url   path: 'latest',
+20 verbose parsed url   href: 'latest' }
+21 verbose addNamed [ 'wiring-pi', 'latest' ]
+22 verbose addNamed [ null, null ]
+23 silly lockFile ae7b4733-cokmvc-latest cokmvc@latest
+24 verbose lock cokmvc@latest C:\Users\heichl\AppData\Roaming\npm-cache\ae7b4733-cokmvc-latest.lock
+25 silly lockFile 8c681f13-wiring-pi-latest wiring-pi@latest
+26 verbose lock wiring-pi@latest C:\Users\heichl\AppData\Roaming\npm-cache\8c681f13-wiring-pi-latest.lock
+27 info addNameTag [ 'cokmvc', 'latest' ]
+28 info addNameTag [ 'wiring-pi', 'latest' ]
+29 verbose request where is /wiring-pi
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 008801b742c3b21e
+32 verbose url raw /wiring-pi
+33 verbose url resolving [ 'https://registry.npmjs.org/', './wiring-pi' ]
+34 verbose url resolved https://registry.npmjs.org/wiring-pi
+35 verbose request where is https://registry.npmjs.org/wiring-pi
+36 info trying registry request attempt 1 at 14:08:39
+37 http GET https://registry.npmjs.org/wiring-pi
+38 verbose request where is /cokmvc
+39 verbose request registry https://registry.npmjs.org/
+40 verbose url raw /cokmvc
+41 verbose url resolving [ 'https://registry.npmjs.org/', './cokmvc' ]
+42 verbose url resolved https://registry.npmjs.org/cokmvc
+43 verbose request where is https://registry.npmjs.org/cokmvc
+44 info trying registry request attempt 1 at 14:08:39
+45 verbose etag "9XXJ5C5YOC8J0522PF62GFB"
+46 http GET https://registry.npmjs.org/cokmvc
+47 http 200 https://registry.npmjs.org/wiring-pi
+48 silly registry.get cb [ 200,
+48 silly registry.get   { date: 'Wed, 04 Feb 2015 06:08:06 GMT',
+48 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+48 silly registry.get     etag: '"DU062PJ0L21P5RHXL6TBVWD4M"',
+48 silly registry.get     'content-type': 'application/json',
+48 silly registry.get     'cache-control': 'max-age=60',
+48 silly registry.get     'content-length': '13817',
+48 silly registry.get     'accept-ranges': 'bytes',
+48 silly registry.get     via: '1.1 varnish',
+48 silly registry.get     age: '1',
+48 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+48 silly registry.get     'x-cache': 'MISS',
+48 silly registry.get     'x-cache-hits': '0',
+48 silly registry.get     'x-timer': 'S1423030085.436102,VS0,VE738',
+48 silly registry.get     vary: 'Accept',
+48 silly registry.get     'keep-alive': 'timeout=10, max=50',
+48 silly registry.get     connection: 'Keep-Alive' } ]
+49 verbose addNamed [ 'wiring-pi', '2.0.0' ]
+50 verbose addNamed [ '2.0.0', '2.0.0' ]
+51 silly lockFile ceb14650-wiring-pi-2-0-0 wiring-pi@2.0.0
+52 verbose lock wiring-pi@2.0.0 C:\Users\heichl\AppData\Roaming\npm-cache\ceb14650-wiring-pi-2-0-0.lock
+53 silly lockFile d2e66f1a-rg-wiring-pi-wiring-pi-2-0-0-tgz https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.0.0.tgz
+54 verbose lock https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.0.0.tgz C:\Users\heichl\AppData\Roaming\npm-cache\d2e66f1a-rg-wiring-pi-wiring-pi-2-0-0-tgz.lock
+55 verbose addRemoteTarball [ 'https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.0.0.tgz',
+55 verbose addRemoteTarball   '080cf7458a26fadba34327cd92ae07807a9b7d6b' ]
+56 info retry fetch attempt 1 at 14:08:41
+57 verbose fetch to= C:\Users\heichl\AppData\Local\Temp\npm-6452-b-gKSs7t\registry.npmjs.org\wiring-pi\-\wiring-pi-2.0.0.tgz
+58 http GET https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.0.0.tgz
+59 http 200 https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.0.0.tgz
+60 silly lockFile d2e66f1a-rg-wiring-pi-wiring-pi-2-0-0-tgz https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.0.0.tgz
+61 silly lockFile d2e66f1a-rg-wiring-pi-wiring-pi-2-0-0-tgz https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.0.0.tgz
+62 silly lockFile ceb14650-wiring-pi-2-0-0 wiring-pi@2.0.0
+63 silly lockFile ceb14650-wiring-pi-2-0-0 wiring-pi@2.0.0
+64 silly lockFile 8c681f13-wiring-pi-latest wiring-pi@latest
+65 silly lockFile 8c681f13-wiring-pi-latest wiring-pi@latest
+66 http 304 https://registry.npmjs.org/cokmvc
+67 silly registry.get cb [ 304,
+67 silly registry.get   { date: 'Wed, 04 Feb 2015 06:08:05 GMT',
+67 silly registry.get     server: 'Apache',
+67 silly registry.get     via: '1.1 varnish',
+67 silly registry.get     'last-modified': 'Wed, 04 Feb 2015 06:08:08 GMT',
+67 silly registry.get     'cache-control': 'max-age=60',
+67 silly registry.get     etag: '"9XXJ5C5YOC8J0522PF62GFB"',
+67 silly registry.get     age: '2',
+67 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+67 silly registry.get     'x-cache': 'MISS',
+67 silly registry.get     'x-cache-hits': '0',
+67 silly registry.get     'x-timer': 'S1423030085.746615,VS0,VE2419',
+67 silly registry.get     vary: 'Accept',
+67 silly registry.get     'content-length': '0',
+67 silly registry.get     'keep-alive': 'timeout=10, max=50',
+67 silly registry.get     connection: 'Keep-Alive' } ]
+68 verbose etag https://registry.npmjs.org/cokmvc from cache
+69 verbose addNamed [ 'cokmvc', '0.0.97-dev' ]
+70 verbose addNamed [ '0.0.97-dev', '0.0.97-dev' ]
+71 silly lockFile 021bce5f-cokmvc-0-0-97-dev cokmvc@0.0.97-dev
+72 verbose lock cokmvc@0.0.97-dev C:\Users\heichl\AppData\Roaming\npm-cache\021bce5f-cokmvc-0-0-97-dev.lock
+73 silly lockFile 021bce5f-cokmvc-0-0-97-dev cokmvc@0.0.97-dev
+74 silly lockFile 021bce5f-cokmvc-0-0-97-dev cokmvc@0.0.97-dev
+75 silly lockFile ae7b4733-cokmvc-latest cokmvc@latest
+76 silly lockFile ae7b4733-cokmvc-latest cokmvc@latest
+77 info already installed cokmvc@0.0.97-dev
+78 silly resolved [ { name: 'wiring-pi',
+78 silly resolved     version: '2.0.0',
+78 silly resolved     description: 'Bindings to wiringPi',
+78 silly resolved     main: 'lib/exports.js',
+78 silly resolved     scripts:
+78 silly resolved      { test: 'echo "Error: no test specified" && exit 1',
+78 silly resolved        install: '/bin/bash ./install.sh' },
+78 silly resolved     repository: { type: 'git', url: 'git@github.com:eugeneware/wiring-pi.git' },
+78 silly resolved     keywords: [ 'wiringPi', 'gpio', 'raspberry', 'pi', 'raspberrypi', 'bcm2835' ],
+78 silly resolved     author: { name: 'Igor Soarez', email: 'igorsoarez@gmail.com' },
+78 silly resolved     contributors: [ [Object], [Object] ],
+78 silly resolved     license: 'BSD',
+78 silly resolved     gitHead: '5af174479431aa2c649237816735333e26898fa1',
+78 silly resolved     bugs: { url: 'https://github.com/eugeneware/wiring-pi/issues' },
+78 silly resolved     homepage: 'https://github.com/eugeneware/wiring-pi',
+78 silly resolved     _id: 'wiring-pi@2.0.0',
+78 silly resolved     _shasum: '080cf7458a26fadba34327cd92ae07807a9b7d6b',
+78 silly resolved     _from: 'wiring-pi@latest',
+78 silly resolved     _npmVersion: '1.4.28',
+78 silly resolved     _npmUser: { name: 'leandregohy', email: 'leandre.gohy@hexeo.be' },
+78 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+78 silly resolved     dist:
+78 silly resolved      { shasum: '080cf7458a26fadba34327cd92ae07807a9b7d6b',
+78 silly resolved        tarball: 'http://registry.npmjs.org/wiring-pi/-/wiring-pi-2.0.0.tgz' },
+78 silly resolved     directories: {},
+78 silly resolved     _resolved: 'https://registry.npmjs.org/wiring-pi/-/wiring-pi-2.0.0.tgz' } ]
+79 info install wiring-pi@2.0.0 into D:\JS\pi\webpi
+80 info installOne wiring-pi@2.0.0
+81 verbose node_modules\wiring-pi unbuild
+82 verbose tar unpack C:\Users\heichl\AppData\Roaming\npm-cache\wiring-pi\2.0.0\package.tgz
+83 silly lockFile 81b82b64--pi-webpi-node-modules-wiring-pi tar://D:\JS\pi\webpi\node_modules\wiring-pi
+84 verbose lock tar://D:\JS\pi\webpi\node_modules\wiring-pi C:\Users\heichl\AppData\Roaming\npm-cache\81b82b64--pi-webpi-node-modules-wiring-pi.lock
+85 silly lockFile 59f24b40-ache-wiring-pi-2-0-0-package-tgz tar://C:\Users\heichl\AppData\Roaming\npm-cache\wiring-pi\2.0.0\package.tgz
+86 verbose lock tar://C:\Users\heichl\AppData\Roaming\npm-cache\wiring-pi\2.0.0\package.tgz C:\Users\heichl\AppData\Roaming\npm-cache\59f24b40-ache-wiring-pi-2-0-0-package-tgz.lock
+87 silly gunzTarPerm modes [ '777', '666' ]
+88 silly gunzTarPerm extractEntry package.json
+89 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+90 silly gunzTarPerm extractEntry .npmignore
+91 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+92 silly gunzTarPerm extractEntry README.md
+93 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+94 silly gunzTarPerm extractEntry CONTRIBUTING.md
+95 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 438 ]
+96 silly gunzTarPerm extractEntry DOCUMENTATION.md
+97 silly gunzTarPerm modified mode [ 'DOCUMENTATION.md', 420, 438 ]
+98 silly gunzTarPerm extractEntry src/wiringPiI2C.cc
+99 silly gunzTarPerm modified mode [ 'src/wiringPiI2C.cc', 420, 438 ]
+100 silly gunzTarPerm extractEntry src/addon.cc
+101 silly gunzTarPerm modified mode [ 'src/addon.cc', 420, 438 ]
+102 silly gunzTarPerm extractEntry src/devlib/maxdetect.cc
+103 silly gunzTarPerm modified mode [ 'src/devlib/maxdetect.cc', 420, 438 ]
+104 silly gunzTarPerm extractEntry src/devlib/devlib.cc
+105 silly gunzTarPerm modified mode [ 'src/devlib/devlib.cc', 420, 438 ]
+106 silly gunzTarPerm extractEntry src/devlib/ds1302.cc
+107 silly gunzTarPerm modified mode [ 'src/devlib/ds1302.cc', 420, 438 ]
+108 silly gunzTarPerm extractEntry src/devlib/ds1302.h
+109 silly gunzTarPerm modified mode [ 'src/devlib/ds1302.h', 420, 438 ]
+110 silly gunzTarPerm extractEntry src/devlib/gertboard.cc
+111 silly gunzTarPerm modified mode [ 'src/devlib/gertboard.cc', 420, 438 ]
+112 silly gunzTarPerm extractEntry src/devlib/gertboard.h
+113 silly gunzTarPerm modified mode [ 'src/devlib/gertboard.h', 420, 438 ]
+114 silly gunzTarPerm extractEntry src/devlib/lcd.cc
+115 silly gunzTarPerm modified mode [ 'src/devlib/lcd.cc', 420, 438 ]
+116 silly gunzTarPerm extractEntry src/devlib/lcd.h
+117 silly gunzTarPerm modified mode [ 'src/devlib/lcd.h', 420, 438 ]
+118 silly gunzTarPerm extractEntry src/devlib/lcd128x64.cc
+119 silly gunzTarPerm modified mode [ 'src/devlib/lcd128x64.cc', 420, 438 ]
+120 silly gunzTarPerm extractEntry src/devlib/lcd128x64.h
+121 silly gunzTarPerm modified mode [ 'src/devlib/lcd128x64.h', 420, 438 ]
+122 silly gunzTarPerm extractEntry src/devlib/devlib.h
+123 silly gunzTarPerm modified mode [ 'src/devlib/devlib.h', 420, 438 ]
+124 silly gunzTarPerm extractEntry src/devlib/maxdetect.h
+125 silly gunzTarPerm modified mode [ 'src/devlib/maxdetect.h', 420, 438 ]
+126 silly gunzTarPerm extractEntry src/devlib/piFace.cc
+127 silly gunzTarPerm modified mode [ 'src/devlib/piFace.cc', 420, 438 ]
+128 silly gunzTarPerm extractEntry src/devlib/piFace.h
+129 silly gunzTarPerm modified mode [ 'src/devlib/piFace.h', 420, 438 ]
+130 silly gunzTarPerm extractEntry src/devlib/piGlow.cc
+131 silly gunzTarPerm modified mode [ 'src/devlib/piGlow.cc', 420, 438 ]
+132 silly gunzTarPerm extractEntry src/devlib/piGlow.h
+133 silly gunzTarPerm modified mode [ 'src/devlib/piGlow.h', 420, 438 ]
+134 silly gunzTarPerm extractEntry src/devlib/piNes.cc
+135 silly gunzTarPerm modified mode [ 'src/devlib/piNes.cc', 420, 438 ]
+136 silly gunzTarPerm extractEntry src/devlib/piNes.h
+137 silly gunzTarPerm modified mode [ 'src/devlib/piNes.h', 420, 438 ]
+138 silly gunzTarPerm extractEntry src/devlib/tcs34725.cc
+139 silly gunzTarPerm modified mode [ 'src/devlib/tcs34725.cc', 420, 438 ]
+140 silly gunzTarPerm extractEntry src/devlib/tcs34725.h
+141 silly gunzTarPerm modified mode [ 'src/devlib/tcs34725.h', 420, 438 ]
+142 silly gunzTarPerm extractEntry src/extensions/mcp23s17.h
+143 silly gunzTarPerm modified mode [ 'src/extensions/mcp23s17.h', 420, 438 ]
+144 silly gunzTarPerm extractEntry src/extensions/dac7678.cc
+145 silly gunzTarPerm modified mode [ 'src/extensions/dac7678.cc', 420, 438 ]
+146 silly gunzTarPerm extractEntry src/extensions/drcSerial.cc
+147 silly gunzTarPerm modified mode [ 'src/extensions/drcSerial.cc', 420, 438 ]
+148 silly gunzTarPerm extractEntry src/extensions/drcSerial.h
+149 silly gunzTarPerm modified mode [ 'src/extensions/drcSerial.h', 420, 438 ]
+150 silly gunzTarPerm extractEntry src/extensions/extensions.cc
+151 silly gunzTarPerm modified mode [ 'src/extensions/extensions.cc', 420, 438 ]
+152 silly gunzTarPerm extractEntry src/extensions/extensions.h
+153 silly gunzTarPerm modified mode [ 'src/extensions/extensions.h', 420, 438 ]
+154 silly gunzTarPerm extractEntry src/extensions/max31855.cc
+155 silly gunzTarPerm modified mode [ 'src/extensions/max31855.cc', 420, 438 ]
+156 silly gunzTarPerm extractEntry src/extensions/max31855.h
+157 silly gunzTarPerm modified mode [ 'src/extensions/max31855.h', 420, 438 ]
+158 silly gunzTarPerm extractEntry src/extensions/max5322.cc
+159 silly gunzTarPerm modified mode [ 'src/extensions/max5322.cc', 420, 438 ]
+160 silly gunzTarPerm extractEntry src/extensions/max5322.h
+161 silly gunzTarPerm modified mode [ 'src/extensions/max5322.h', 420, 438 ]
+162 silly gunzTarPerm extractEntry src/extensions/mcp23008.cc
+163 silly gunzTarPerm modified mode [ 'src/extensions/mcp23008.cc', 420, 438 ]
+164 silly gunzTarPerm extractEntry src/extensions/mcp23008.h
+165 silly gunzTarPerm modified mode [ 'src/extensions/mcp23008.h', 420, 438 ]
+166 silly gunzTarPerm extractEntry src/extensions/mcp23016.cc
+167 silly gunzTarPerm modified mode [ 'src/extensions/mcp23016.cc', 420, 438 ]
+168 silly gunzTarPerm extractEntry src/extensions/mcp23016.h
+169 silly gunzTarPerm modified mode [ 'src/extensions/mcp23016.h', 420, 438 ]
+170 silly gunzTarPerm extractEntry src/extensions/mcp23017.cc
+171 silly gunzTarPerm modified mode [ 'src/extensions/mcp23017.cc', 420, 438 ]
+172 silly gunzTarPerm extractEntry src/extensions/mcp23017.h
+173 silly gunzTarPerm modified mode [ 'src/extensions/mcp23017.h', 420, 438 ]
+174 silly gunzTarPerm extractEntry src/extensions/mcp23s08.cc
+175 silly gunzTarPerm modified mode [ 'src/extensions/mcp23s08.cc', 420, 438 ]
+176 silly gunzTarPerm extractEntry src/extensions/mcp23s08.h
+177 silly gunzTarPerm modified mode [ 'src/extensions/mcp23s08.h', 420, 438 ]
+178 silly gunzTarPerm extractEntry src/extensions/mcp23s17.cc
+179 silly gunzTarPerm modified mode [ 'src/extensions/mcp23s17.cc', 420, 438 ]
+180 silly gunzTarPerm extractEntry src/extensions/dac7678.h
+181 silly gunzTarPerm modified mode [ 'src/extensions/dac7678.h', 420, 438 ]
+182 silly gunzTarPerm extractEntry src/extensions/mcp3002.cc
+183 silly gunzTarPerm modified mode [ 'src/extensions/mcp3002.cc', 420, 438 ]
+184 silly gunzTarPerm extractEntry src/extensions/mcp3002.h
+185 silly gunzTarPerm modified mode [ 'src/extensions/mcp3002.h', 420, 438 ]
+186 silly gunzTarPerm extractEntry src/extensions/mcp3004.cc
+187 silly gunzTarPerm modified mode [ 'src/extensions/mcp3004.cc', 420, 438 ]
+188 silly gunzTarPerm extractEntry src/extensions/mcp3004.h
+189 silly gunzTarPerm modified mode [ 'src/extensions/mcp3004.h', 420, 438 ]
+190 silly gunzTarPerm extractEntry src/extensions/mcp3422.cc
+191 silly gunzTarPerm modified mode [ 'src/extensions/mcp3422.cc', 420, 438 ]
+192 silly gunzTarPerm extractEntry src/extensions/mcp3422.h
+193 silly gunzTarPerm modified mode [ 'src/extensions/mcp3422.h', 420, 438 ]
+194 silly gunzTarPerm extractEntry src/extensions/mcp4802.cc
+195 silly gunzTarPerm modified mode [ 'src/extensions/mcp4802.cc', 420, 438 ]
+196 silly gunzTarPerm extractEntry src/extensions/mcp4802.h
+197 silly gunzTarPerm modified mode [ 'src/extensions/mcp4802.h', 420, 438 ]
+198 silly gunzTarPerm extractEntry src/extensions/pca9685.cc
+199 silly gunzTarPerm modified mode [ 'src/extensions/pca9685.cc', 420, 438 ]
+200 silly gunzTarPerm extractEntry src/extensions/pca9685.h
+201 silly gunzTarPerm modified mode [ 'src/extensions/pca9685.h', 420, 438 ]
+202 silly gunzTarPerm extractEntry src/extensions/pcf8574.cc
+203 silly gunzTarPerm modified mode [ 'src/extensions/pcf8574.cc', 420, 438 ]
+204 silly gunzTarPerm extractEntry src/extensions/pcf8574.h
+205 silly gunzTarPerm modified mode [ 'src/extensions/pcf8574.h', 420, 438 ]
+206 silly gunzTarPerm extractEntry src/extensions/pcf8591.cc
+207 silly gunzTarPerm modified mode [ 'src/extensions/pcf8591.cc', 420, 438 ]
+208 silly gunzTarPerm extractEntry src/extensions/pcf8591.h
+209 silly gunzTarPerm modified mode [ 'src/extensions/pcf8591.h', 420, 438 ]
+210 silly gunzTarPerm extractEntry src/extensions/sn3218.cc
+211 silly gunzTarPerm modified mode [ 'src/extensions/sn3218.cc', 420, 438 ]
+212 silly gunzTarPerm extractEntry src/extensions/sn3218.h
+213 silly gunzTarPerm modified mode [ 'src/extensions/sn3218.h', 420, 438 ]
+214 silly gunzTarPerm extractEntry src/extensions/sr595.cc
+215 silly gunzTarPerm modified mode [ 'src/extensions/sr595.cc', 420, 438 ]
+216 silly gunzTarPerm extractEntry src/extensions/sr595.h
+217 silly gunzTarPerm modified mode [ 'src/extensions/sr595.h', 420, 438 ]
+218 silly gunzTarPerm extractEntry src/softPwm.cc
+219 silly gunzTarPerm modified mode [ 'src/softPwm.cc', 420, 438 ]
+220 silly gunzTarPerm extractEntry src/softPwm.h
+221 silly gunzTarPerm modified mode [ 'src/softPwm.h', 420, 438 ]
+222 silly gunzTarPerm extractEntry src/softServo.cc
+223 silly gunzTarPerm modified mode [ 'src/softServo.cc', 420, 438 ]
+224 silly gunzTarPerm extractEntry src/softServo.h
+225 silly gunzTarPerm modified mode [ 'src/softServo.h', 420, 438 ]
+226 silly gunzTarPerm extractEntry src/softTone.cc
+227 silly gunzTarPerm modified mode [ 'src/softTone.cc', 420, 438 ]
+228 silly gunzTarPerm extractEntry src/softTone.h
+229 silly gunzTarPerm modified mode [ 'src/softTone.h', 420, 438 ]
+230 silly gunzTarPerm extractEntry src/wiringPi.cc
+231 silly gunzTarPerm modified mode [ 'src/wiringPi.cc', 420, 438 ]
+232 silly gunzTarPerm extractEntry src/wiringPi.h
+233 silly gunzTarPerm modified mode [ 'src/wiringPi.h', 420, 438 ]
+234 silly gunzTarPerm extractEntry src/addon.h
+235 silly gunzTarPerm modified mode [ 'src/addon.h', 420, 438 ]
+236 silly gunzTarPerm extractEntry src/wiringPiI2C.h
+237 silly gunzTarPerm modified mode [ 'src/wiringPiI2C.h', 420, 438 ]
+238 silly gunzTarPerm extractEntry src/wiringPiISR.cc
+239 silly gunzTarPerm modified mode [ 'src/wiringPiISR.cc', 420, 438 ]
+240 silly gunzTarPerm extractEntry src/wiringPiISR.h
+241 silly gunzTarPerm modified mode [ 'src/wiringPiISR.h', 420, 438 ]
+242 silly gunzTarPerm extractEntry src/wiringPiSPI.cc
+243 silly gunzTarPerm modified mode [ 'src/wiringPiSPI.cc', 420, 438 ]
+244 silly gunzTarPerm extractEntry src/wiringPiSPI.h
+245 silly gunzTarPerm modified mode [ 'src/wiringPiSPI.h', 420, 438 ]
+246 silly gunzTarPerm extractEntry src/wiringSerial.cc
+247 silly gunzTarPerm modified mode [ 'src/wiringSerial.cc', 420, 438 ]
+248 silly gunzTarPerm extractEntry src/wiringSerial.h
+249 silly gunzTarPerm modified mode [ 'src/wiringSerial.h', 420, 438 ]
+250 silly gunzTarPerm extractEntry src/wiringShift.cc
+251 silly gunzTarPerm modified mode [ 'src/wiringShift.cc', 420, 438 ]
+252 silly gunzTarPerm extractEntry src/wiringShift.h
+253 silly gunzTarPerm modified mode [ 'src/wiringShift.h', 420, 438 ]
+254 silly gunzTarPerm extractEntry src/wpi.cc
+255 silly gunzTarPerm modified mode [ 'src/wpi.cc', 420, 438 ]
+256 silly gunzTarPerm extractEntry src/wpi.h
+257 silly gunzTarPerm modified mode [ 'src/wpi.h', 420, 438 ]
+258 silly gunzTarPerm extractEntry .gitmodules
+259 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+260 silly gunzTarPerm extractEntry examples/blink.js
+261 silly gunzTarPerm modified mode [ 'examples/blink.js', 420, 438 ]
+262 silly gunzTarPerm extractEntry examples/pwm.js
+263 silly gunzTarPerm modified mode [ 'examples/pwm.js', 420, 438 ]
+264 silly gunzTarPerm extractEntry install.sh
+265 silly gunzTarPerm modified mode [ 'install.sh', 420, 438 ]
+266 silly gunzTarPerm extractEntry lib/exports.js
+267 silly gunzTarPerm modified mode [ 'lib/exports.js', 420, 438 ]
+268 silly gunzTarPerm extractEntry CHANGELOG.md
+269 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+270 silly gunzTarPerm extractEntry patchs/devLib_Makefile.patch
+271 silly gunzTarPerm modified mode [ 'patchs/devLib_Makefile.patch', 420, 438 ]
+272 silly gunzTarPerm extractEntry patchs/gpio_Makefile.patch
+273 silly gunzTarPerm modified mode [ 'patchs/gpio_Makefile.patch', 420, 438 ]
+274 silly gunzTarPerm extractEntry binding.gyp
+275 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+276 silly lockFile 81b82b64--pi-webpi-node-modules-wiring-pi tar://D:\JS\pi\webpi\node_modules\wiring-pi
+277 silly lockFile 81b82b64--pi-webpi-node-modules-wiring-pi tar://D:\JS\pi\webpi\node_modules\wiring-pi
+278 silly lockFile 59f24b40-ache-wiring-pi-2-0-0-package-tgz tar://C:\Users\heichl\AppData\Roaming\npm-cache\wiring-pi\2.0.0\package.tgz
+279 silly lockFile 59f24b40-ache-wiring-pi-2-0-0-package-tgz tar://C:\Users\heichl\AppData\Roaming\npm-cache\wiring-pi\2.0.0\package.tgz
+280 info preinstall wiring-pi@2.0.0
+281 verbose readDependencies using package.json deps
+282 verbose readDependencies using package.json deps
+283 silly resolved []
+284 verbose about to build D:\JS\pi\webpi\node_modules\wiring-pi
+285 info build D:\JS\pi\webpi\node_modules\wiring-pi
+286 verbose linkStuff [ false, false, false, 'D:\\JS\\pi\\webpi\\node_modules' ]
+287 info linkStuff wiring-pi@2.0.0
+288 verbose linkBins wiring-pi@2.0.0
+289 verbose linkMans wiring-pi@2.0.0
+290 verbose rebuildBundles wiring-pi@2.0.0
+291 info install wiring-pi@2.0.0
+292 verbose unsafe-perm in lifecycle true
+293 info wiring-pi@2.0.0 Failed to exec install script
+294 verbose node_modules\wiring-pi unbuild
+295 info preuninstall wiring-pi@2.0.0
+296 info uninstall wiring-pi@2.0.0
+297 verbose true,D:\JS\pi\webpi\node_modules,D:\JS\pi\webpi\node_modules unbuild wiring-pi@2.0.0
+298 info postuninstall wiring-pi@2.0.0
+299 error wiring-pi@2.0.0 install: `/bin/bash ./install.sh`
+299 error Exit status 1
+300 error Failed at the wiring-pi@2.0.0 install script.
+300 error This is most likely a problem with the wiring-pi package,
+300 error not with npm itself.
+300 error Tell the author that this fails on your system:
+300 error     /bin/bash ./install.sh
+300 error You can get their info via:
+300 error     npm owner ls wiring-pi
+300 error There is likely additional logging output above.
+301 error System Windows_NT 6.1.7601
+302 error command "node" "C:\\Users\\heichl\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install"
+303 error cwd D:\JS\pi\webpi
+304 error node -v v0.10.30
+305 error npm -v 1.4.21
+306 error code ELIFECYCLE
+307 verbose exit [ 1, true ]
