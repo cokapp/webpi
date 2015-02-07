@@ -3,7 +3,7 @@
     "version": "0.0.1dev",
     "main": "index",
     "dependencies": {
-        "cokmvc": "latest",
+        "cokmvc": "0.1.0",
         "wiring-pi": "latest"
     }
 }
