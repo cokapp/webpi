@@ -1,51 +1,11 @@
-var CONST = {
-	pinMode: {
-		'in': global.wpi.INPUT,
-		'out': global.wpi.OUTPUT,
-		'input': global.wpi.INPUT,
-		'output': global.wpi.OUTPUT,
-
-		'INPUT': global.wpi.INPUT,
-		'OUTPUT': global.wpi.OUTPUT,
-		'PWM_OUTPUT': global.wpi.PWM_OUTPUT,
-		'GPIO_CLOCK': global.wpi.GPIO_CLOCK,
-		'SOFT_PWM_OUTPUT': global.wpi.SOFT_PWM_OUTPUT,
-		'SOFT_TONE_OUTPUT': global.wpi.SOFT_TONE_OUTPUT
-	}
-};
-
-var modeCache = new COKMVC.hashmap();
-modeCache.put(global.wpi.INPUT, 'INPUT');
-modeCache.put(global.wpi.OUTPUT, 'OUTPUT');
-modeCache.put(global.wpi.PWM_OUTPUT, 'PWM_OUTPUT');
-modeCache.put(global.wpi.GPIO_CLOCK, 'GPIO_CLOCK');
-modeCache.put(global.wpi.SOFT_PWM_OUTPUT, 'SOFT_PWM_OUTPUT');
-modeCache.put(global.wpi.SOFT_TONE_OUTPUT, 'SOFT_TONE_OUTPUT');
-
-modeCache.put('IN', global.wpi.INPUT);
-modeCache.put('OUT', global.wpi.OUTPUT);
-modeCache.put('INPUT', global.wpi.INPUT);
-modeCache.put('OUTPUT', global.wpi.OUTPUT);
-modeCache.put('PWM_OUTPUT', global.wpi.PWM_OUTPUT);
-modeCache.put('GPIO_CLOCK', global.wpi.GPIO_CLOCK);
-modeCache.put('SOFT_PWM_OUTPUT', global.wpi.SOFT_PWM_OUTPUT);
-modeCache.put('SOFT_TONE_OUTPUT', global.wpi.SOFT_TONE_OUTPUT);
-
-
-
 var pinCache = new COKMVC.hashmap();
+var CONST = require('../lib/const.js');
 
 
 var Handler = COKMVC.BaseController.extend({
 	wpi: global.wpi,
-	modeNumber: function(text){
-		var key = text.toUpperCase();
-		return modeCache.get(key);
-	},
-	modeText: function(number){
-		var key = parseInt(number);
-		return modeCache.get(key);
-	},
+	modeNumber: CONST.modeNumber,
+	modeText: CONST.modeText,
 
 	readPin: function(pin, callback){
 		var _this = this;
@@ -56,7 +16,7 @@ var Handler = COKMVC.BaseController.extend({
 		}else{
 			cachedPinData = {
 				pin: pin,
-				name: 'pin' + pin,
+				name: CONST.pinName(pin),
 				mode: null,
 				value: null
 			};
