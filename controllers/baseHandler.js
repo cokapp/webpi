@@ -1,13 +1,14 @@
 var pinCache = new COKMVC.hashmap();
-var CONST = require('../lib/const.js');
-
 
 var Handler = COKMVC.BaseController.extend({
-	wpi: global.wpi,
-	modeNumber: CONST.modeNumber,
-	modeText: CONST.modeText,
+	wpi: global.webpi.api,
+	device: global.webpi.device,
 
-	readPin: function(pin, callback){
+	modeNumber: global.webpi.const.modeNumber,
+	modeText: global.webpi.const.modeText,
+	pinName: global.webpi.const.pinName,
+
+	readPin: function(pin){
 		var _this = this;
 
 		var cachedPinData;
@@ -16,7 +17,7 @@ var Handler = COKMVC.BaseController.extend({
 		}else{
 			cachedPinData = {
 				pin: pin,
-				name: CONST.pinName(pin),
+				name: _this.pinName(pin),
 				mode: null,
 				value: null
 			};
@@ -29,9 +30,9 @@ var Handler = COKMVC.BaseController.extend({
 		cachedPinData.value = _this.wpi.digitalRead(pin);
 
 		pinCache.put(pin, cachedPinData);
-		callback(cachedPinData);
+		return cachedPinData;
 	},
-	writePin: function(pin, pinData, callback){
+	writePin: function(pin, pinData){
 		var _this = this;
 
 		var cachedPinData = {};
@@ -57,7 +58,7 @@ var Handler = COKMVC.BaseController.extend({
 
 		pinCache.put(pin, cachedPinData);
 
-		callback(cachedPinData);
+		return cachedPinData;
 	}
 
 });

@@ -5,9 +5,19 @@ var options = {
     appRoot: __dirname
 };
 
+var CONST = require('../lib/const.js');
+
 var wpi = require('wiring-pi');
 wpi.setup('phys');
-global.wpi = wpi;
+
+var device = wpi.piBoardId();
+device.pinNum = CONST.pinNum(device.model);
+
+global.webpi = {
+	const: CONST,
+	device: wpi.piBoardId(),
+	api: wpi
+};
 
 //StartUP
 NodeMVC.startup(options, function(server){
