@@ -35,12 +35,13 @@ var Handler = baseHandler.extend({
 	doPost: function(cb) {
 		var _this = this;
 
-		var data = _this.para.body.data;
+		var pins = _this.para.body.pins;
 
 		var pinMap = {};
 
-		for(var i in data){
-			var pinData = data[i];
+		for(var i in pins){
+			var pinData = pins[i];
+			pinData.pin = parseInt(pinData.pin);
 			var pinData = _this.writePin(pinData.pin, pinData);	
 
 			pinMap[pinData.pin] = pinData;
