@@ -35,7 +35,7 @@ var Handler = baseHandler.extend({
 	doPost: function(cb) {
 		var _this = this;
 
-		var pins = _this.para.body.pins;
+		var pins = _this.para.body.gpio;
 
 		var pinMap = {};
 
