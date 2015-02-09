@@ -24,8 +24,8 @@ var Handler = COKMVC.BaseController.extend({
 		}
 
 		if(cachedPinData.mode === null){
-			_this.wpi.pinMode(pin, global.wpi.OUTPUT);
-			cachedPinData.mode = _this.modeText(global.wpi.OUTPUT);
+			_this.wpi.pinMode(pin, _this.wpi.OUTPUT);
+			cachedPinData.mode = _this.modeText(_this.wpi.OUTPUT);
 		}
 		cachedPinData.value = _this.wpi.digitalRead(pin);
 

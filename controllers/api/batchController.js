@@ -4,7 +4,7 @@
  var baseHandler = require('../baseHandler');
 
 var Handler = baseHandler.extend({
-	HandlerRegExp: /^\/gpios(?:\/((?:\d+-)+\d+))?/i,
+	HandlerRegExp: /^\/gpios(?:\/((?:\d+-)+\d+))?$/i,
 	doGet: function(cb) {
 		var _this = this;
 
