@@ -12,8 +12,8 @@ var Handler = COKMVC.BaseController.extend({
 		var _this = this;
 
 		var cachedPinData;
-		if(pinCache.containsKey(pin)){
-			cachedPinData = pinCache.get(pin);
+		if(pinCache[pin]){
+			cachedPinData = pinCache[pin];
 		}else{
 			cachedPinData = {
 				pin: pin,
@@ -29,15 +29,15 @@ var Handler = COKMVC.BaseController.extend({
 		}
 		cachedPinData.value = _this.wpi.digitalRead(pin);
 
-		pinCache.put(pin, cachedPinData);
+		pinCache[pin] = cachedPinData;
 		return cachedPinData;
 	},
 	writePin: function(pin, pinData){
 		var _this = this;
 
 		var cachedPinData = {};
-		if(pinCache.containsKey(pin)){
-			cachedPinData = pinCache.get(pin);
+		if(pinCache[pin]){
+			cachedPinData = pinCache[pin];
 		}
 
 		if(pinData.mode != undefined && 
@@ -62,7 +62,7 @@ var Handler = COKMVC.BaseController.extend({
 			cachedPinData.value = _this.wpi.digitalRead(pin);
 		}
 
-		pinCache.put(pin, cachedPinData);
+		pinCache[pin] = cachedPinData;
 
 		return cachedPinData;
 	}
