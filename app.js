@@ -14,6 +14,7 @@ global.webpi.api = wpi;
 global.webpi.const = require('./lib/const.js');
 global.webpi.device = wpi.piBoardId();
 global.webpi.device.pinNum = global.webpi.const.pinNum(global.webpi.device.model);
+global.webpi.pincache = {};
 
 //StartUP
 NodeMVC.startup(options, function(server){

@@ -20,6 +20,7 @@ var Handler = baseHandler.extend({
 
 		var pin = parseInt(this.para.urlPara[1]);
 		var data = {
+			pin: pin,
 			mode: _this.para.body.mode,
 			value: _this.para.body.value
 		};

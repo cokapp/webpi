@@ -1,4 +1,4 @@
-var pinCache = new COKMVC.hashmap();
+var pinCache = global.webpi.pincache;
 
 var Handler = COKMVC.BaseController.extend({
 	wpi: global.webpi.api,
@@ -45,12 +45,21 @@ var Handler = COKMVC.BaseController.extend({
 			var pinMode = _this.modeNumber(pinData.mode);
 			_this.wpi.pinMode(pin, pinMode);
 			cachedPinData.mode = _this.modeText(pinMode);
+		}else if(cachedPinData.mode === undefined 
+			|| cachedPinData.mode === null){
+			var pinMode = _this.modeNumber('in');
+			_this.wpi.pinMode(pin, pinMode);
+			cachedPinData.mode = _this.modeText(pinMode);
 		}
+
 		if(pinData.value != undefined && 
 			pinData.value != null){
 			var pinValue = parseInt(pinData.value);
 			_this.wpi.digitalWrite(pin, pinValue);
 			cachedPinData.value = pinValue;
+		}else if(cachedPinData.value === null
+			|| cachedPinData.value === undefined){
+			cachedPinData.value = _this.wpi.digitalRead(pin);
 		}
 
 		pinCache.put(pin, cachedPinData);
