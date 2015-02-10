@@ -14,6 +14,8 @@ var Handler = COKMVC.BaseController.extend({
 		var cachedPinData;
 		if(pinCache[pin]){
 			cachedPinData = pinCache[pin];
+			cachedPinData.pin = pin;
+			cachedPinData.name = _this.pinName(pin);
 		}else{
 			cachedPinData = {
 				pin: pin,
@@ -47,7 +49,7 @@ var Handler = COKMVC.BaseController.extend({
 			cachedPinData.mode = _this.modeText(pinMode);
 		}else if(cachedPinData.mode === undefined 
 			|| cachedPinData.mode === null){
-			var pinMode = _this.modeNumber('in');
+			var pinMode = _this.wpi.OUTPUT;
 			_this.wpi.pinMode(pin, pinMode);
 			cachedPinData.mode = _this.modeText(pinMode);
 		}
