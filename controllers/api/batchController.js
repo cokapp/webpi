@@ -12,7 +12,7 @@ var Handler = COKMVC.BaseController.extend({
 			var pinArray = _this.para.urlPara[1].split('-');
 			for(var i in pinArray){
 				var pin = pinArray[i];
-				ids.push(parseInt(pin));
+				ids.push(pin);
 			}
 		}
 
