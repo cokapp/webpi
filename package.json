@@ -4,6 +4,7 @@
     "main": "index",
     "dependencies": {
         "cokmvc": "0.1.0",
-        "wiring-pi": "latest"
+        "wiring-pi": "latest",
+        "socket.io": "latest"
     }
 }

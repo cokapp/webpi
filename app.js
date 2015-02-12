@@ -19,4 +19,8 @@ global.webpi.pincache = {};
 //StartUP
 NodeMVC.startup(options, function(server){
     //NodeMVC is working, enjoy!
+
+
+
+    
 });
