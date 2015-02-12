@@ -1,54 +1,36 @@
 /*
 批量管理IO口
  */
- var baseHandler = require('../baseHandler');
-
-var Handler = baseHandler.extend({
+var Handler = COKMVC.BaseController.extend({
 	HandlerRegExp: /^\/gpios(?:\/((?:\d+-)+\d+))?$/i,
 	doGet: function(cb) {
 		var _this = this;
 
-		var pins = [];
+		var ids = undefined;
 		if(_this.para.urlPara[1]){
+			ids = [];
 			var pinArray = _this.para.urlPara[1].split('-');
 			for(var i in pinArray){
 				var pin = pinArray[i];
-				pins.push(parseInt(pin));
-			}
-		}else{
-			for(var pin = 1; pin <= _this.device.pinNum; pin++){
-				pins.push(pin);
+				ids.push(parseInt(pin));
 			}
 		}
 
-		var pinMap = {};
-		for(var i in pins){
-			var pin = pins[i];
-			pinMap[pin] = _this.readPin(pin);
-		}
+		var pinDataMap = GPIO.readPins(ids);
 
 		_this.contentType = 'json';
-		_this.model = pinMap;
+		_this.model = pinDataMap;
 
 		cb();
 	},
 	doPost: function(cb) {
 		var _this = this;
 
-		var pins = _this.para.body.gpio;
-
-		var pinMap = {};
-
-		for(var i in pins){
-			var pinData = pins[i];
-			pinData.pin = parseInt(pinData.pin);
-			var pinData = _this.writePin(pinData.pin, pinData);	
-
-			pinMap[pinData.pin] = pinData;
-		}
+		var pinDatas = _this.para.body.gpio;
+		var pinDataMap = GPIO.writePins(pinDatas);
 
 		_this.contentType = 'json';
-		_this.model = pinMap;
+		_this.model = pinDataMap;
 
 		cb();
 	}
