@@ -6,12 +6,10 @@ var options = {
 };
 
 global.GPIO = require('./lib/gpio/index.js');
+global.SOCKET = require('./lib/socket/index.js');
 
 //StartUP
 NodeMVC.startup(options, function(server){
     //NodeMVC is working, enjoy!
-
-
-
-    
+    global.SOCKET.init(server);
 });
